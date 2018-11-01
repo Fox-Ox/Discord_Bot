@@ -1,2 +1,2 @@
-cd C:\Users\sveni\Desktop\DiscordBot
+cd /d %~d0%~p0
 node index.js

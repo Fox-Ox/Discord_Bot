@@ -26,8 +26,6 @@ bot.on('message', message => {
 		//Erkennt den Befehl nach !
 		var v_befehl = v_msg[0]
 		
-		message.reply(v_befehl);
-		
 		var v_cont = '';
 		var i = 1;
 		
