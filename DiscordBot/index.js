@@ -5,7 +5,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client();
 
 // Token for your bot, located in the Discord application console - https://discordapp.com/developers/applications/me/
-const token = 'NTA2ODczNTA3NjI0NTE3Njcz.DrohhQ.nF2c9-HloxFaYrMQRLzWJZ7hDiA'
+const token = ''
 
 // Gets called when our bot is successfully logged in and connected
 bot.on('ready', () => {
@@ -22,19 +22,19 @@ bot.on('message', message => {
         // Get the user's message excluding the `!`
         var text = message.content.substring(1);
 		var v_msg = text.split(' ');
-				
+
 		//Erkennt den Befehl nach !
 		var v_befehl = v_msg[0]
-		
+
 		var v_cont = '';
 		var i = 1;
-		
+
 		//Fügt den Content der Nachricht zusammen
 		while (i < v_msg.length){
-			v_cont += v_msg[i] + ' '; 
+			v_cont += v_msg[i] + ' ';
 			i++;
 		}
-		
+
 		//Start der Befehlserkennung
 		//1. Help Function
 		//-------------------------------------
